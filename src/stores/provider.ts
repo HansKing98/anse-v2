@@ -1,3 +1,4 @@
+import providerYiModel from '@/providers/yimodel'
 import providerOpenAI from '@/providers/openai'
 import providerAzure from '@/providers/azure'
 import providerGoogle from '@/providers/google'
@@ -6,6 +7,7 @@ import { allConversationTypes } from '@/types/conversation'
 import type { BotMeta } from '@/types/app'
 
 export const providerList = [
+  providerYiModel(),
   providerOpenAI(),
   providerAzure(),
   providerReplicate(),

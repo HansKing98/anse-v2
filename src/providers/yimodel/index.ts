@@ -6,46 +6,33 @@ import type { Provider } from '@/types/provider'
 
 const providerOpenAI = () => {
   const provider: Provider = {
-    id: 'provider-openai',
-    icon: 'i-simple-icons-openai', // @unocss-include
-    name: 'OpenAI',
+    id: 'provider-yi',
+    icon: 'i-simple-icons-robot', // @unocss-include
+    name: 'Yi Model',
     globalSettings: [
       {
         key: 'apiKey',
-        name: 'API Key',
+        name: 'API Key - platform.lingyiwanwu.com',
         type: 'api-key',
       },
       {
         key: 'baseUrl',
         name: 'Base URL',
-        description: 'Custom base url for OpenAI API.',
+        description: 'Custom base url for Yi Model API.',
         type: 'input',
-        default: 'https://api.openai.com',
+        default: 'https://api.lingyiwanwu.com',
       },
       {
         key: 'model',
-        name: 'OpenAI model',
-        description: 'Custom gpt model for OpenAI API.',
+        name: 'Yi model',
+        description: 'Custom gpt model for Yi Model API.',
         type: 'select',
         options: [
-          { value: 'gpt-3.5-turbo', label: 'gpt-3.5-turbo' },
-          { value: 'gpt-4', label: 'gpt-4' },
-          { value: 'gpt-4-0314', label: 'gpt-4-0314' },
-          { value: 'gpt-4-0613', label: 'gpt-4-0613' },
-          { value: 'gpt-4-1106-preview', label: 'gpt-4-1106-preview' },
-          { value: 'gpt-4-0125-preview', label: 'gpt-4-0125-preview' },
-          { value: 'gpt-4-turbo-preview', label: 'gpt-4-turbo-preview' },
-          { value: 'gpt-4-32k', label: 'gpt-4-32k' },
-          { value: 'gpt-4-32k-0314', label: 'gpt-4-32k-0314' },
-          { value: 'gpt-4-32k-0613', label: 'gpt-4-32k-0613' },
-          { value: 'gpt-3.5-turbo-0125', label: 'gpt-3.5-turbo-0125' },
-          { value: 'gpt-3.5-turbo-0301', label: 'gpt-3.5-turbo-0301' },
-          { value: 'gpt-3.5-turbo-0613', label: 'gpt-3.5-turbo-0613' },
-          { value: 'gpt-3.5-turbo-1106', label: 'gpt-3.5-turbo-1106' },
-          { value: 'gpt-3.5-turbo-16k', label: 'gpt-3.5-turbo-16k' },
-          { value: 'gpt-3.5-turbo-16k-0613', label: 'gpt-3.5-turbo-16k-0613' },
+          { value: 'yi-34b-chat-0205', label: 'yi-34b-chat-0205' },
+          { value: 'yi-34b-chat-200k', label: 'yi-34b-chat-200k' },
+          { value: 'yi-vl-plus', label: 'yi-vl-plus-多模态' },
         ],
-        default: 'gpt-3.5-turbo',
+        default: 'yi-34b-chat-0205',
       },
       {
         key: 'maxTokens',
