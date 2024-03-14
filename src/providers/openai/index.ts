@@ -28,6 +28,8 @@ const providerOpenAI = () => {
         description: 'Custom gpt model for OpenAI API.',
         type: 'select',
         options: [
+          { value: 'yi-34b-chat-0205', label: 'yi-34b-chat-0205' },
+          { value: 'yi-34b-chat-200k', label: 'yi-34b-chat-200k' },
           { value: 'gpt-3.5-turbo', label: 'gpt-3.5-turbo' },
           { value: 'gpt-4', label: 'gpt-4' },
           { value: 'gpt-4-0314', label: 'gpt-4-0314' },
