@@ -40,7 +40,7 @@ const providerOpenAI = () => {
           { value: 'yi-34b-chat-200k', label: 'yi-34b-chat-200k' },
           { value: 'yi-vl-plus', label: 'yi-vl-plus-多模态' },
         ],
-        default: 'yi-34b-chat-0205',
+        default: 'yi-large',
       },
       {
         key: 'maxTokens',
