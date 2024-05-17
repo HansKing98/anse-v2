@@ -28,6 +28,14 @@ const providerOpenAI = () => {
         description: 'Custom gpt model for Yi Model API.',
         type: 'select',
         options: [
+          { value: 'yi-large', label: 'yi-large' },
+          { value: 'yi-large-turbo', label: 'yi-large-turbo' },
+          { value: 'yi-large-rag', label: 'yi-large-rag' },
+          { value: 'yi-medium', label: 'yi-medium' },
+          { value: 'yi-medium-200k', label: 'yi-medium-200k' },
+          { value: 'yi-spark', label: 'yi-spark' },
+          { value: 'yi-vision', label: 'yi-vision' },
+          //
           { value: 'yi-34b-chat-0205', label: 'yi-34b-chat-0205' },
           { value: 'yi-34b-chat-200k', label: 'yi-34b-chat-200k' },
           { value: 'yi-vl-plus', label: 'yi-vl-plus-多模态' },
